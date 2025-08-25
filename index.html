@@ -8,7 +8,7 @@
   </head>
   <body>
 
-    <!-- idea: have a javascript animated loss function converging in the header? :p -->
+    <!-- Header -->
     <div id="dhead" class="container">
       <div class="row">
         <div id="dpic">
@@ -16,81 +16,120 @@
         </div>
         <div id="ddesc">
           <h1>Benarji Mulakala</h1>
-          <h2>I like to train deep neural nets... 🧠🤖</h2>
+          <h2>Aspiring Machine Learning Engineer | AI/ML Researcher</h2>
           <div id="dico">
             <a href="https://github.com/benarjii" target="_blank"><img src="assets/cgithub.svg" class="iico"/></a>
             <a href="https://www.linkedin.com/in/benarjimulakala/" target="_blank"><img src="assets/inkedin-3.svg" class="iico" /></a>
             <img src="assets/cemail.svg" style="cursor: pointer;" class="iico" id="iemail" title="click to reveal" />
           </div>
-          <div id="demail"></div> <!-- will reveal email -->
+          <div id="demail"></div>
         </div>
       </div>
     </div>
 
     <hr>
 
-    <div id="history" class="container">
-
-      <div class="entry row">
-        <div class="timespan">
-          2022 - 2026
-        </div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/image2.png" style="max-width: 32px;"/>
-        </div>
-        <div class="desc">
-          BE at Chandigarh University, India, with a major in Computer Science and Engineering and a specialization in Artificial Intelligence and Machine Learning. This is where I developed my interest in deep neural networks and artificial intelligence.
-        </div>
-      </div>
+    <!-- Professional Summary -->
+    <div class="container">
+      <div class="ctitle">About Me</div>
+      <p>
+        Aspiring Machine Learning Engineer with hands-on experience in LLM fine-tuning,
+        Retrieval-Augmented Generation (RAG) systems, and cloud-based AI tools.
+        Strong foundation in Python, deep learning frameworks, and applied ML research with a
+        published chapter in Wiley Online. Currently seeking AI/ML internships in Bangalore.
+      </p>
     </div>
 
-    <div style="background-color: #eee; padding-top: 1px; margin-top: 50px; padding-bottom: 30px;">
+    <!-- Skills -->
     <div class="container">
-      <div class="ctitle">writings</div>
-      <div><a href="https://medium.com/@benarji73" target="_blank">This</a> is my Medium account were i ocassionally write blogs on things related to maths and ai.</div>
+      <div class="ctitle">Technical Skills</div>
       <ul class="nodot">
-        <li>Sep 2024 <a></a></li>
+        <li><b>Programming:</b> Python, C, C++</li>
+        <li><b>ML/DL Frameworks:</b> PyTorch, TensorFlow, Keras, FastAPI, Hugging Face Transformers, PEFT</li>
+        <li><b>AI/LLM Tools:</b> LangChain, LlamaIndex, CrewAI, LoRA, SMOTE</li>
+        <li><b>Cloud:</b> AWS, GCP</li>
       </ul>
     </div>
+
+    <!-- Education -->
+    <div id="history" class="container">
+      <div class="ctitle">Education</div>
+
+      <div class="entry row">
+        <div class="timespan">2022 - 2026</div>
+        <div class="ico"><div class="entry-dot"></div></div>
+        <div class="desc">BE (Hons) in Computer Science & Engineering (AIML), Chandigarh University, Punjab (CGPA: 7.78)</div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">2020 - 2022</div>
+        <div class="ico"><div class="entry-dot"></div></div>
+        <div class="desc">Sri Chaitanya Junior College, Vijayawada (Intermediate, CGPA: 8.9)</div>
+      </div>
+
+      <div class="entry row">
+        <div class="timespan">2019 - 2020</div>
+        <div class="ico"><div class="entry-dot"></div></div>
+        <div class="desc">Sri Chaitanya High School, Nandigama (GPA: 9.8)</div>
+      </div>
     </div>
 
+    <!-- Projects -->
     <div id="pet-projects" class="container">
-      <div class="ctitle">pet projects</div>
+      <div class="ctitle">Projects</div>
 
       <div class="project">
-        <div class="pico"><img src="assets/image3.jpg" /></div>
-        <div class="pdesc"> I worked on this <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394230952.ch9" target="_blank">project</a> in my very first semester using data from the <a href="https://exoplanetarchive.ipac.caltech.edu/" target="_blank">Nasa Exoplanet Archive</a> to predict the existence of exoplanets and classify them by size. I applied <a href="https://arxiv.org/abs/1106.1813" target="_blank">SMOTE</a> to balance the dataset before training various advanced machine learning models. Combining my interest in astronomy with data was a fun way to kick off my journey into machine learning.
-        </div> 
-        <div class="pend"></div>
+        <div class="pdesc">
+          <b>Comparative Evaluation and Prediction of Exoplanets</b>  
+          Predicted exoplanet existence and classified by size using NASA Exoplanet Archive data, improving classification accuracy by 15%.  
+          <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394230952.ch9" target="_blank">Published book chapter (Wiley 2023)</a>.
+        </div>
       </div>
 
       <div class="project">
-        <div class="pico"><img src="assets/alpaca.jpg" /></div>
-        <div class="pdesc"> I fine-tuned the <a href="https://huggingface.co/meta-llama/Llama-2-7b" target="_blank">Llama-2-7B</a> model using the <a href="https://arxiv.org/abs/2106.09685" target="_blank">LoRA</a> technique and successfully ran it locally on my machine. The dataset i used was xyz.
-        </div> 
-        <div class="pend"></div>
+        <div class="pdesc">
+          <b>Fine-tuned Alpaca-LoRA</b>  
+          Fine-tuned the Stanford Alpaca model with LoRA in PyTorch/PEFT, reducing compute cost by 60% and improving NLP task accuracy.  
+          Used Hugging Face Transformers + bitsandbytes for efficient low-precision training.
+        </div>
       </div>
+
+      <div class="project">
+        <div class="pdesc">
+          <b>Multi-Agent RAG System</b>  
+          Built a multi-agent RAG pipeline using LangChain, LlamaIndex, and CrewAI for domain-specific retrieval.  
+          Designed workflows improving response relevance by 20% through multi-agent orchestration.
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="container">
+      <div class="ctitle">Certifications</div>
+      <ul class="nodot">
+        <li>Microsoft Azure AI Fundamentals</li>
+        <li>Deep Learning Specialisation (Coursera)</li>
+        <li>HarvardX: CS50’s Introduction to Programming with Python</li>
+      </ul>
+    </div>
+
+    <!-- Awards / Extras -->
+    <div class="container">
+      <div class="ctitle">Achievements & Activities</div>
+      <ul class="nodot">
+        <li>Research Presentation Award at Student Research Cell (SRC)</li>
+        <li>Participated in multiple marathons</li>
+      </ul>
+    </div>
 
     <div class="container">
-      <div class="ctitle">publications</div>
-
-      <div class="pub">
-        <div class="pub-title"><a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9781394230952.ch9" target="_blank">Comparative Evaluation and Prediction of Exoplanets Using Machine Learning Methods</a></div>
-        <div class="pub-venue">Wiley 2023</div>
-        <div class="pub-authors">Divneet Singh Kapoor, Kiran Jot Singh, Ashirvad Singh, Benarji Mulakala</div>
-      </div>
-
-
-      <div>
-        <br>
-        Also on <a href="https://scholar.google.com/citations?user=FOOYCHsAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      </div>
+      <div class="ctitle">Interests</div>
+      <p>Reading, Nature Photography, Trekking, Meditation, Fitness</p>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br>
 
-    <!-- attempt hiding from spambots :p -->
+    <!-- JS to reveal email -->
     <script type="text/javascript">
       const rot13 = (message) => {
         const alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM';
@@ -99,7 +138,7 @@
       var e_is_shown = false;
       document.getElementById('iemail').addEventListener("click", function(){
         let demail = document.getElementById('demail');
-        let msg = "oranewv73" + "@" + "tznvy.pbz<oe>"
+        let msg = "oranewv73" + "@" + "tznvy.pbz<oe>";
         demail.innerHTML = rot13(msg);
         demail.style.opacity = e_is_shown ? 0 : 1;
         e_is_shown = !e_is_shown;
